@@ -1,4 +1,12 @@
+using DataAccess;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
+
+string connection = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<LibraryApiDbContext>(options => options.UseNpgsql(connection));
+builder.Services.AddControllersWithViews();
 
 // Add services to the container.
 
