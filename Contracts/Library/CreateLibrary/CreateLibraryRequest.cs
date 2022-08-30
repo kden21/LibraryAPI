@@ -1,6 +1,6 @@
-namespace Contracts.Human.CreateHuman;
+namespace Contracts.Library.CreateLibrary;
 
-public record CreateHumanRequest
+public record CreateLibraryRequest
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }

@@ -1,3 +1,9 @@
+using Contracts.Library.CreateLibrary;
+using Contracts.Library.DeleteLibrary;
+using Contracts.Library.GetLibraries;
+using Contracts.Library.GetLibraryById;
+using Contracts.Library.UpdateLibrary;
+
 namespace AppServices.Library.Services;
 
 public interface ILibraryService

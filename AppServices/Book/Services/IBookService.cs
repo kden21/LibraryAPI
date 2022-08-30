@@ -1,3 +1,9 @@
+using Contracts.Book.CreateBook;
+using Contracts.Book.DeleteBook;
+using Contracts.Book.GetBookById;
+using Contracts.Book.GetBooks;
+using Contracts.Book.UpdateBook;
+
 namespace AppServices.Book.Services;
 
 public interface IBookService

@@ -1,4 +1,6 @@
+using AppServices.Book.Services;
 using AppServices.Human.Services;
+using AppServices.Library.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Register.Registrars;
