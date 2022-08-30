@@ -11,9 +11,9 @@ public class LibraryApiDbContext : DbContext
     {
     }
     
-    public DbSet<LibraryEntity> Libraries{ get; set; } 
-    public DbSet<HumanEntity> Humans{ get; set; } 
-    public DbSet<BookEntity> Books{ get; set; } 
+    //public DbSet<LibraryEntity> Libraries{ get; set; } 
+    //public DbSet<HumanEntity> Humans{ get; set; } 
+    //public DbSet<BookEntity> Books{ get; set; } 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
