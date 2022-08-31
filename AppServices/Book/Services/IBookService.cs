@@ -8,9 +8,9 @@ namespace AppServices.Book.Services;
 
 public interface IBookService
 {
-    Task<GetBooksResponse> GetHumans(GetBooksRequest request, CancellationToken cancellation);
-    Task<CreateBookResponse> CreateHuman(CreateBookRequest request, CancellationToken cancellationToken);
-    Task<DeleteBookResponse> DeleteHuman(DeleteBookRequest request, CancellationToken cancellationToken);
-    Task<UpdateBookResponse> UpdateHuman(UpdateBookRequest request, CancellationToken cancellationToken);
-    Task<GetBookByIdResponse> GetHumanById(GetBookByIdRequest request, CancellationToken cancellation);
+    Task<GetBooksResponse> GetBooks(GetBooksRequest request, CancellationToken cancellation);
+    Task<CreateBookResponse> CreateBook(CreateBookRequest request, CancellationToken cancellationToken);
+    Task<DeleteBookResponse> DeleteBook(DeleteBookRequest request, CancellationToken cancellationToken);
+    Task<UpdateBookResponse> UpdateBook(UpdateBookRequest request, CancellationToken cancellationToken);
+    Task<GetBookByIdResponse> GetBookById(GetBookByIdRequest request, CancellationToken cancellation);
 }

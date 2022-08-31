@@ -7,18 +7,24 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Configurators" />
-      <Folder Include="StartupRegistrars" />
-    </ItemGroup>
-
-    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="11.0.1" />
+      <PackageReference Include="MediatR" Version="10.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.7.22376.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0-preview.7.22376.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0-preview.7.22375.6" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0-preview.7.22375.6" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0-preview.7.22375.6" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.0-preview.7" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\AppServices\AppServices.csproj" />
+      <ProjectReference Include="..\Handlers\Handlers.csproj" />
+      <ProjectReference Include="..\Infrastructure\Infrastructure\Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>

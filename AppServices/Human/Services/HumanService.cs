@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace AppServices.Human.Services;
 
-public class HumanService
+public class HumanService : IHumanService
 {
     private readonly IHumanRepository _humanRepository;
     private readonly IMapper _mapper;

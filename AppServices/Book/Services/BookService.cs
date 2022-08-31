@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace AppServices.Book.Services;
 
-  public class BookService
+  public class BookService : IBookService
 {
     private readonly IBookRepository _bookRepository;
     private readonly IMapper _mapper;
