@@ -14,6 +14,6 @@ public record BookEntity : Entity
     [Required]
     public string? Author {get; set;}
     public int LibraryId { get; set; }
-    public LibraryEntity Library { get; set; }
-    public List<HumanEntity> Humans { get; set; } = new List<HumanEntity>();
+    public virtual LibraryEntity Library { get; set; }
+    public virtual List<HumanEntity> Humans { get; set; } = new List<HumanEntity>();
 }

@@ -10,8 +10,8 @@ public static class AppServicesRegistrar
     public static IServiceCollection AddAppServices(this IServiceCollection services)
     {
         services.AddScoped<IHumanService, HumanService>();
-        services.AddScoped<ILibraryService, LibraryService>();
-        services.AddScoped<IBookService, BookService>();
+        //services.AddScoped<ILibraryService, LibraryService>();
+       // services.AddScoped<IBookService, BookService>();
         
         return services;
     }

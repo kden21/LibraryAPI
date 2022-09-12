@@ -1,6 +1,8 @@
 using DataAccess;
 using DataAccess.Repositories;
+using DataAccess.Repositories.Book;
 using DataAccess.Repositories.Human;
+using DataAccess.Repositories.Library;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -34,6 +36,8 @@ public static class DataAccessRegistrar
         services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             
         services.AddScoped<IHumanRepository, HumanRepository>();
+        //services.AddScoped<IBookRepository, BookRepository>();
+        //services.AddScoped<ILibraryRepository, LibraryRepository>();
 
         return services;
     }

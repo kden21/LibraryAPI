@@ -15,6 +15,6 @@ public record HumanEntity : Entity
     public DateTime Birthday { get; set; }
     [DefaultValue(Enums.Role.Client)]
     public Role? Role { get; set; }
-    public List<LibraryEntity> Libraries { get; set; } = new List<LibraryEntity>();
-    public List<BookEntity> Books { get; set; } = new List<BookEntity>();
+    //public List<LibraryEntity> Libraries { get; set; } = new List<LibraryEntity>();
+    //public List<BookEntity> Books { get; set; } = new List<BookEntity>();
 }

@@ -1,4 +1,3 @@
-using AppServices.Shared;
 using AutoMapper;
 using Contracts.Human.CreateHuman;
 using Contracts.Human.DeleteHuman;
@@ -6,6 +5,7 @@ using Contracts.Human.Dto;
 using Contracts.Human.GetHumanById;
 using Contracts.Human.GetHumans;
 using Contracts.Human.UpdateHuman;
+using DataAccess.Repositories.Human;
 using Domain;
 using Microsoft.Extensions.Configuration;
 
